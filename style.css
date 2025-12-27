@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d-center {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.sec-one {
+    display: flex;
+    gap: 1rem;
+    padding: 4rem;
+}
+
+.sec-one .testi-bubble {
+    /* flex: 5; */
+}
+
+.sec-one .testi-bubble .bubble {
+    position: relative;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.sec-one .testi-bubble .bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid black;
+}
+
+.sec-one .testi-bubble .bubble p {
+    font-size: 1.2rem;
+}
+
+.sec-one .testi-bubble .bubble p:last-child {
+    margin-top: 2rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.profile .body-profile h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.profile .body-profile p {
+    font-size: 0.9rem;
+}
+
+.sec-one .testi-box {
+    /* flex: 5; */
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.sec-one .testi-box .comment {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.sec-two {
+    display: flex;
+    padding: 4rem;
+    gap: 2rem;
+}
+
+.sec-two .img-profile img {
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.sec-two .body-profile {
+    /* width: 500px; */
+    background-color: black;
+    border-radius: 30px;
+    padding: 2rem 3rem;
+    color: white;
+}
+
+.sec-two .body-profile .star-sec {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.sec-two .body-profile .star-sec .star {
+    color: gold;
+}
+
+.sec-two .body-profile .star-sec .star::before {
+    content: '★';
+}
+
+.sec-two .body-profile h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.sec-two .body-profile p {
+    font-size: 1.2rem;
+    color: grey;
+}
+
+.sec-two .body-profile .body-comment {
+    margin-top: 1rem;
+}
+
+.sec-two .body-profile .body-comment p {
+    color: white;
+}
+
+.sec-three {
+    border: 1px solid black;
+    padding: 2rem 4rem;
+    margin: 0 2rem 2rem 2rem;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.sec-three .sec-comment p {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    /* width: 600px; */
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+.sec-three .profile-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-three .profile-nav img {
+    border-radius: 50%;
+    margin-inline: 0.5rem;
+}
+
+.sec-three .profile-nav .nav-arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #007BFF;
+    cursor: pointer;
+    margin-inline: 1rem;
+}
+
+.sec-three .profile-nav img.first-img {
+    width: 50px;
+    height: 50px;
+}
+
+.sec-three .profile-nav img.second-img {
+    width: 70px;
+    height: 70px;
+}
+
+.sec-three .profile-nav img.third-img {
+    width: 50px;
+    height: 50px;
+}
+
+.sec-three .profile-nav img.first-img,
+.sec-three .profile-nav img.third-img {
+    opacity: 0.6;
+}
+
+.sec-three .name {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 920px) {
+    .sec-one {
+        
+    }
+}
